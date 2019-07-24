@@ -6,6 +6,8 @@ import args
 import tensorflow as tf
 import os
 
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+
 
 def set_logger(context, verbose=False):
     logger = logging.getLogger(context)
